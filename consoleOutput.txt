@@ -1,0 +1,73 @@
+# [Main]  Title: Qualcomm Programming Assignment: Problem # 1
+=============================================================
+# [Main] Reading the first Matrix, denoted by A, from a file
+------------------------------
+[sparseMatrix] mMatrixRowSize = 4
+[sparseMatirx] mMatrixColSize = 5
+[sparseMatrix] File read from ./testdata/matrix_input.txt
+------------------------------
+[sparseMatrix] Storing the sparse matrix via the triple representation method
+Imported Matrix =
+0,0,3,0,4,
+0,0,5,7,0,
+0,0,0,0,0,
+0,2,6,0,0,
+[sparseMatrix] Allocate [short: 3 x 6] memory for matrix storage
+------------------------------
+--- Total matrix size: 4 X 5 = 20
+--- Total number of nonzeros = 6
+--- Matrix sparsity = 30 %
+--- Total number of memory slots for triple representation = 3 X 6 = 18
+------------------------------
+[sparseMatrix] The triple representation of the sparse matrix
+(rowIndex,colIndex), nonzerovalue
+(0,2), 3
+(0,4), 4
+(1,2), 5
+(1,3), 7
+(3,1), 2
+(3,2), 6
+=============================================================
+# [Main] Reading the second Matrix, denoted by B, from a file
+------------------------------
+[sparseMatrix] mMatrixRowSize = 5
+[sparseMatirx] mMatrixColSize = 4
+[sparseMatrix] File read from ./testdata/matrix_input4.txt
+------------------------------
+[sparseMatrix] Storing the sparse matrix via the triple representation method
+Imported Matrix =
+0,0,0,4,
+1,0,0,0,
+0,2,0,0,
+0,0,4,0,
+5,0,0,0,
+[sparseMatrix] Allocate [short: 3 x 5] memory for matrix storage
+------------------------------
+--- Total matrix size: 5 X 4 = 20
+--- Total number of nonzeros = 5
+--- Matrix sparsity = 25 %
+--- Total number of memory slots for triple representation = 3 X 5 = 15
+------------------------------
+[sparseMatrix] mMatrixRowSize = 0
+[sparseMatirx] mMatrixColSize = 0
+=============================================================
+# [Main] Sparse Matrix mutiplications, denoted by C=A*B
+[sparseMatrix] Allocate [short: 3 x 6] memory for matrix storage
+[sparseMatrix] mMatrixRowSize = 4
+[sparseMatirx] mMatrixColSize = 4
+[sparseMatirx] mNumOfNonZeros = 6
+------------------------------
+[sparseMatrix] The triple representation of the sparse matrix
+(rowIndex,colIndex), nonzerovalue
+(0,0), 20
+(0,1), 6
+(1,1), 10
+(1,2), 28
+(3,0), 2
+(3,1), 12
+------------------------------
+[sparseMatrix] deAllocate memory
+------------------------------
+[sparseMatrix] deAllocate memory
+------------------------------
+[sparseMatrix] deAllocate memory:
